@@ -4,4 +4,8 @@ class student{
     this.studentid = studentid;
     this.major = major;
    }
+
+   introduce(){
+    
+   }
 }
