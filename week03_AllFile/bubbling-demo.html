@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<body>
+
+<div id="parent" style="padding:30px; background:#dbeafe">
+  กล่องแม่
+  <button id="child">ปุ่มลูก</button>
+</div>
+
+<script>
+document.getElementById("parent").addEventListener("click", () => {
+  console.log("2) แม่รู้ด้วย เพราะ event ลอยขึ้นมา");
+});
+
+document.getElementById("child").addEventListener("click", (e) => {
+  console.log("1) ปุ่มลูกถูกคลิก");
+  // ถ้าไม่อยากให้ลอยขึ้นไป: e.stopPropagation();
+});
+</script>
+
+</body>
+</html>

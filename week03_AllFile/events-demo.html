@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<body>
+
+    <h2 id="hoverMe">เอาเมาส์มาชี้ฉันสิ</h2>
+<input type="text" id="liveInput" placeholder="พิมพ์เพื่อดู event: input" />
+<p id="counter">0 ตัวอักษร</p>
+
+<script>
+    const h = document.getElementById("hoverMe")
+    h.addEventListener("mouseover", ()=> h.style.color = "crimson")
+    h.EventListener("mouseout", ()=> h.style.color = "black")
+
+    const box = document.getElementById("liveInput");
+    const counter = document.getElementById("counter");
+    box.addEventListener("input",(e)=>{
+        counter.textContent = '0${e.target.value.length} ตัวอักษร';
+        } );
+
+        document.addEventListener("DOMContentLoaded", ()=>{
+            console.log("DOM พร้อมใช้งานแล้ว");
+        });
+
+
+</script>
+</body>
+</html></html>
